@@ -19,7 +19,7 @@ public class StudentController {
         return repo.findAll();
     }
 
-    @GetMapping("/student/{id}")
+    @GetMapping("/students/{id}")
     public Student getStudent(@PathVariable("id") Long id) throws IOException {
         return repo.findById(id);
     }
